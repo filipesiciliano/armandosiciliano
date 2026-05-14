@@ -1,0 +1,218 @@
+{
+  "site": {
+    "title": "Ventilação Mecânica Sem Enrolação",
+    "description": "Aprenda ventilação mecânica de forma simples, prática e sem enrolação",
+    "domain": "ventilacaomecanica.com.br",
+    "language": "pt-BR"
+  },
+
+  "product": {
+    "name": "Ventilação Mecânica Sem Enrolação",
+    "author": "Armando Siciliano",
+    "price": 34.90,
+    "originalPrice": 97,
+    "discount": 64,
+    "currency": "BRL"
+  },
+
+  "author": {
+    "name": "Armando Siciliano",
+    "title": "Especialista em Ventilação Mecânica",
+    "bio": "Fisioterapeuta especializado em Ventilação Mecânica com 15+ anos de experiência clínica em UTI, emergência e care",
+    "experience": "15+ anos",
+    "photo": "armando-siciliano.jpg",
+    "email": "contato@armandosiciliano.com.br",
+    "socials": {
+      "instagram": "https://instagram.com/ftarmandosiciliano",
+      "linkedin": "https://linkedin.com/in/armandosiciliano",
+      "whatsapp": "https://wa.me/5585988889999"
+    }
+  },
+
+  "payment": {
+    "provider": "stripe",
+    "providers": {
+      "stripe": {
+        "enabled": false,
+        "checkoutId": "cs_..."
+      },
+      "hotmart": {
+        "enabled": false,
+        "productId": "..."
+      },
+      "pagseguro": {
+        "enabled": false,
+        "code": "..."
+      },
+      "kiwify": {
+        "enabled": true,
+        "productUrl": "https://pay.kiwify.com.br/BoEyQDB"
+      }
+    },
+    "guarantee": {
+      "days": 7,
+      "refundEmail": "refund@armandosiciliano.com.br"
+    }
+  },
+
+  "content": {
+    "hero": {
+      "mainHeadline": "Ventilação Mecânica Sem Enrolação",
+      "subheadline": "Aprenda a dominar ventilação mecânica de forma simples, prática e sem toda aquela confusão de conteúdos complexos.",
+      "cta": "COMPRAR AGORA - R$ 34,90"
+    },
+
+    "modules": [
+      {
+        "icon": "🫁",
+        "title": "Conceitos Essenciais",
+        "description": "Respiração espontânea vs. ventilação mecânica. O que você realmente precisa saber."
+      },
+      {
+        "icon": "⚙️",
+        "title": "Modos Ventilatórios",
+        "description": "Assistido, controlado, espontâneo. Quando usar cada um e por quê."
+      },
+      {
+        "icon": "📊",
+        "title": "Parâmetros Prácticos",
+        "description": "FiO2, PEEP, volume corrente. Como interpretar e ajustar corretamente."
+      },
+      {
+        "icon": "🔄",
+        "title": "Ajustes Ventiladores",
+        "description": "Protocolo prático para modificar parâmetros com segurança."
+      },
+      {
+        "icon": "🏥",
+        "title": "Manejo Clínico",
+        "description": "Casos reais de UTI. Como proceder em diferentes situações clínicas."
+      },
+      {
+        "icon": "📈",
+        "title": "Interpretação de Dados",
+        "description": "Gráficos e números. Entenda o que seu monitor está te dizendo."
+      },
+      {
+        "icon": "⚠️",
+        "title": "Complicações Comuns",
+        "description": "O que pode dar errado e como reconhecer e evitar problemas."
+      },
+      {
+        "icon": "✅",
+        "title": "Checklist Prático",
+        "description": "Guia rápido para consultar sempre que tiver dúvidas em plantão."
+      }
+    ],
+
+    "testimonials": [
+      {
+        "name": "Julia Mendes",
+        "role": "Estudante de Fisioterapia",
+        "rating": 5,
+        "text": "Finalmente entendi ventilação mecânica! O ebook é objetivo, prático e faz total sentido. Recomendo para todo estudante de fisioterapia.",
+        "initials": "JM"
+      },
+      {
+        "name": "Carlos Rocha",
+        "role": "Fisioterapeuta - UTI",
+        "rating": 5,
+        "text": "Trabalho em UTI há 5 anos e ainda assim aprendi coisas novas. O material é direto ao ponto, sem enrolação mesmo. Muito bom!",
+        "initials": "CR"
+      },
+      {
+        "name": "Ana Ferreira",
+        "role": "Recém-formada",
+        "rating": 5,
+        "text": "Comprei para me preparar para a prova e passei na primeira! Conteúdo bem organizado, exemplos práticos, excelente investimento.",
+        "initials": "AF"
+      }
+    ],
+
+    "faq": [
+      {
+        "question": "Serve para iniciantes ou só para experientes?",
+        "answer": "Perfeito para ambos! O material começa do básico (o que é ventilação mecânica) e vai até conceitos mais avançados. Cada um aprende no seu ritmo."
+      },
+      {
+        "question": "Tenho acesso imediato?",
+        "answer": "Sim! Após a confirmação do pagamento, você recebe um email com o link de download. Leva menos de 1 minuto."
+      },
+      {
+        "question": "Funciona no celular?",
+        "answer": "Totalmente! O PDF funciona perfeitamente em qualquer smartphone, tablet ou computador. Estude onde quiser."
+      },
+      {
+        "question": "O ebook tem certificado?",
+        "answer": "O ebook é um material educativo. Não é um curso certificado, mas você ganha um comprovante de compra que pode incluir no seu currículo."
+      },
+      {
+        "question": "Quanto tempo leva para aprender?",
+        "answer": "A leitura completa leva de 3-5 horas. Mas o conteúdo é feito para reler sempre que precisar durante sua prática clínica."
+      },
+      {
+        "question": "E se não gostar? Como funciona o reembolso?",
+        "answer": "Muito simples! Se não ficar satisfeito, basta enviar um email nos primeiros 7 dias e devolvemos 100% do seu dinheiro. Sem perguntas, sem enrolação."
+      },
+      {
+        "question": "Como é o pagamento?",
+        "answer": "Pagamento seguro via cartão de crédito, débito ou transferência bancária. Processado por Stripe, a plataforma mais segura do Brasil."
+      }
+    ]
+  },
+
+  "analytics": {
+    "googleAnalytics": {
+      "enabled": false,
+      "id": "GA-..."
+    },
+    "facebookPixel": {
+      "enabled": false,
+      "id": "..."
+    },
+    "hotmartTracking": {
+      "enabled": false,
+      "id": "..."
+    }
+  },
+
+  "colors": {
+    "primary": "#0A5C7E",
+    "primaryDark": "#053A5F",
+    "primaryLight": "#0D7FA3",
+    "clinical": "#10B981",
+    "clinicalLight": "#6EE7B7",
+    "accent": "#06B6D4",
+    "background": "#F8FAFC",
+    "backgroundDark": "#0F172A"
+  },
+
+  "seo": {
+    "title": "Ventilação Mecânica Sem Enrolação | Ebook Premium",
+    "description": "Aprenda ventilação mecânica de forma simples, prática e sem enrolação. Ebook premium do Armando Siciliano.",
+    "keywords": [
+      "ventilação mecânica",
+      "fisioterapia",
+      "ebook",
+      "educação",
+      "saúde",
+      "UTI",
+      "cuidados respiratórios"
+    ],
+    "ogImage": "og-image.jpg",
+    "ogUrl": "https://ventilacaomecanica.com.br"
+  },
+
+  "email": {
+    "supportEmail": "suporte@armandosiciliano.com.br",
+    "refundEmail": "refund@armandosiciliano.com.br",
+    "contactEmail": "contato@armandosiciliano.com.br"
+  },
+
+  "social": {
+    "instagram": "https://instagram.com/ftarmandosiciliano",
+    "linkedin": "https://linkedin.com/in/armandosiciliano",
+    "whatsapp": "https://wa.me/5585988889999",
+    "youtube": "https://youtube.com/@ftarmandosiciliano"
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "name": "armandosiciliano",
+  "version": "1.0.0",
+  "description": "Landing page premium e altamente persuasiva para vender o ebook \"Ventilação Mecânica Sem Enrolação\" do autor Armando Siciliano.",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}

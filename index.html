@@ -1,0 +1,1332 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Aprenda ventilação mecânica de forma simples, prática e sem enrolação. Ebook premium do Armando Siciliano."
+    />
+    <meta
+      name="keywords"
+      content="ventilação mecânica, fisioterapia, ebook, educação, saúde"
+    />
+    <meta name="author" content="Armando Siciliano" />
+    <meta property="og:title" content="Ventilação Mecânica Sem Enrolação" />
+    <meta
+      property="og:description"
+      content="Domine ventilação mecânica de forma simples e prática"
+    />
+    <meta property="og:type" content="website" />
+
+    <title>Ventilação Mecânica Sem Enrolação | Ebook Premium</title>
+
+    <!-- TailwindCSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              primary: "#0A5C7E",
+              "primary-dark": "#053A5F",
+              "primary-light": "#0D7FA3",
+              clinical: "#10B981",
+              "clinical-light": "#6EE7B7",
+              premium: "#F8FAFC",
+              "premium-dark": "#0F172A",
+              accent: "#06B6D4",
+            },
+            fontFamily: {
+              sans: [
+                "Segoe UI",
+                "Roboto",
+                "Oxygen",
+                "Ubuntu",
+                "Cantarell",
+                "sans-serif",
+              ],
+              display: ["Poppins", "Segoe UI", "sans-serif"],
+            },
+            animation: {
+              "fade-in": "fadeIn 0.8s ease-in-out",
+              "slide-up": "slideUp 0.8s ease-out",
+              glow: "glow 3s ease-in-out infinite",
+              float: "float 3s ease-in-out infinite",
+            },
+            keyframes: {
+              fadeIn: {
+                "0%": { opacity: "0" },
+                "100%": { opacity: "1" },
+              },
+              slideUp: {
+                "0%": { opacity: "0", transform: "translateY(30px)" },
+                "100%": { opacity: "1", transform: "translateY(0)" },
+              },
+              glow: {
+                "0%, 100%": { boxShadow: "0 0 20px rgba(13, 127, 163, 0.3)" },
+                "50%": { boxShadow: "0 0 40px rgba(13, 127, 163, 0.6)" },
+              },
+              float: {
+                "0%, 100%": { transform: "translateY(0px)" },
+                "50%": { transform: "translateY(-10px)" },
+              },
+            },
+          },
+        },
+      };
+    </script>
+
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&family=Segoe+UI:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="bg-white text-gray-900 overflow-x-hidden">
+    <!-- Sticky CTA Mobile -->
+    <div
+      id="sticky-cta"
+      class="fixed bottom-0 left-0 right-0 z-40 md:hidden bg-gradient-to-r from-primary to-primary-light shadow-2xl transform translate-y-20 transition-transform duration-300"
+    >
+      <div class="px-4 py-3 flex gap-2">
+        <button
+          class="flex-1 bg-clinical hover:bg-clinical/90 text-white font-bold py-3 rounded-lg transition-all duration-300 shadow-lg"
+          onclick="scrollToCheckout()"
+        >
+          COMPRAR AGORA
+        </button>
+      </div>
+    </div>
+
+    <!-- Header Section with CTI Background -->
+    <div class="relative z-50 overflow-hidden">
+      <!-- CTI Background Image (Low Opacity) -->
+      <div class="absolute inset-0 bg-cover bg-center opacity-15"></div>
+
+      <!-- Promo Banner -->
+      <div
+        class="relative z-10 bg-gradient-to-r from-clinical via-emerald-500 to-teal-500 text-white text-center py-3 text-sm font-semibold"
+      >
+        🎁 Desconto Especial: 65% OFF! Aproveite agora → R$ 34,90
+      </div>
+
+      <!-- Header Navigation -->
+      <header
+        class="relative z-10 bg-white/5 backdrop-blur-md border-b border-white/10"
+      >
+        <div
+          class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-3 flex justify-between items-center"
+        >
+          <div class="flex items-center space-x-2">
+            <div
+              class="w-8 h-8 bg-gradient-to-br from-primary to-clinical rounded-lg flex items-center justify-center"
+            >
+              <span class="text-white font-bold text-sm">VM</span>
+            </div>
+            <span class="font-bold text-primary text-lg"
+              >Ventilação Mecânica</span
+            >
+          </div>
+          <nav class="hidden md:flex space-x-8">
+            <a
+              href="#beneficios"
+              class="text-gray-600 hover:text-primary transition-colors duration-300"
+              >Benefícios</a
+            >
+            <a
+              href="#autor"
+              class="text-gray-600 hover:text-primary transition-colors duration-300"
+              >Sobre</a
+            >
+            <a
+              href="#modulos"
+              class="text-gray-600 hover:text-primary transition-colors duration-300"
+              >Conteúdo</a
+            >
+            <a
+              href="#prova-social"
+              class="text-gray-600 hover:text-primary transition-colors duration-300"
+              >Depoimentos</a
+            >
+          </nav>
+          <button
+            onclick="scrollToCheckout()"
+            class="hidden md:block bg-gradient-to-r from-clinical to-green-500 hover:shadow-lg text-white font-bold px-6 py-2 rounded-lg transition-all duration-300"
+          >
+            Comprar
+          </button>
+        </div>
+      </header>
+    </div>
+    <!-- End of Header Section with Background -->
+
+    <!-- Floating CTA Button (Right Side) -->
+    <button
+      id="floating-cta"
+      onclick="redirectToKiwify()"
+      class="hidden fixed right-6 bottom-8 z-40 group bg-gradient-to-r from-clinical to-emerald-500 hover:shadow-2xl text-white font-bold py-4 px-6 rounded-full transition-all duration-300 transform hover:scale-110 shadow-lg animate-pulse hover:animate-none"
+    >
+      <span class="flex items-center justify-center gap-2">
+        💚 Comprar
+        <span class="text-lg">→</span>
+      </span>
+      <span
+        class="absolute -top-2 -right-2 bg-red-500 text-white text-xs font-black rounded-full w-7 h-7 flex items-center justify-center animate-bounce"
+      >
+        65%
+      </span>
+    </button>
+
+    <!-- HERO SECTION -->
+    <section
+      id="hero"
+      class="relative pt-40 pb-20 overflow-hidden bg-gradient-to-br from-premium via-white to-blue-50"
+    >
+      <!-- Decorative elements -->
+      <div class="bg-header"></div>
+      <div
+        class="absolute top-20 right-10 w-96 h-96 bg-clinical/10 rounded-full blur-3xl opacity-40"
+      ></div>
+      <div
+        class="absolute bottom-0 left-10 w-72 h-72 bg-primary/10 rounded-full blur-3xl opacity-40"
+      ></div>
+
+      <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid md:grid-cols-2 gap-12 items-center">
+          <!-- Left Content -->
+          <div class="space-y-8 animate-fade-in">
+            <div class="inline-block">
+              <span
+                class="px-4 py-2 bg-clinical/10 text-clinical font-semibold text-sm rounded-full"
+              >
+                ✨ Seu método prático e sem complicação
+              </span>
+            </div>
+
+            <h1
+              class="text-5xl md:text-6xl font-black text-gray-900 leading-tight font-display"
+            >
+              Ventilação Mecânica
+              <span
+                class="text-transparent bg-clip-text bg-gradient-to-r from-primary to-clinical"
+              >
+                Sem Enrolação
+              </span>
+            </h1>
+
+            <p class="text-xl text-gray-600 leading-relaxed font-light">
+              Aprenda a dominar ventilação mecânica de forma simples, prática e
+              <strong>sem toda aquela confusão</strong> de conteúdos complexos.
+            </p>
+
+            <p
+              class="text-lg text-gray-700 border-l-4 border-clinical pl-4 italic"
+            >
+              "Finalmente um material direto ao ponto, focado no que realmente
+              importa para sua prática clínica."
+            </p>
+
+            <!-- Trust Badges -->
+            <div class="flex flex-wrap gap-4 pt-4">
+              <div
+                class="flex items-center gap-2 bg-white rounded-lg px-4 py-2 shadow-sm"
+              >
+                <span class="text-2xl">✓</span>
+                <span class="text-sm font-semibold text-gray-700"
+                  >Imediato</span
+                >
+              </div>
+              <div
+                class="flex items-center gap-2 bg-white rounded-lg px-4 py-2 shadow-sm"
+              >
+                <span class="text-2xl">✓</span>
+                <span class="text-sm font-semibold text-gray-700"
+                  >Garantia 7 dias</span
+                >
+              </div>
+              <div
+                class="flex items-center gap-2 bg-white rounded-lg px-4 py-2 shadow-sm"
+              >
+                <span class="text-2xl">✓</span>
+                <span class="text-sm font-semibold text-gray-700"
+                  >+2000 leitores</span
+                >
+              </div>
+            </div>
+
+            <!-- CTA Button -->
+            <div class="flex flex-col gap-4 pt-6">
+              <button
+                onclick="redirectToKiwify()"
+                class="group relative px-8 py-4 bg-gradient-to-r from-clinical to-emerald-500 hover:shadow-2xl text-white font-bold text-lg rounded-xl transition-all duration-300 transform hover:scale-105 overflow-hidden"
+              >
+                <div
+                  class="absolute inset-0 bg-gradient-to-r from-emerald-600 to-teal-600 opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+                ></div>
+                <span class="relative flex items-center justify-center gap-2">
+                  💚 COMPRAR AGORA - R$ 34,90
+                  <span class="text-sm">→</span>
+                </span>
+              </button>
+              <p class="text-center text-sm text-gray-600">
+                Sem taxa, seguro e direto ao seu email
+              </p>
+            </div>
+          </div>
+
+          <!-- Right - Ebook Mockup & Author -->
+          <div
+            class="relative h-full flex flex-col items-center justify-center animate-float"
+          >
+            <!-- Ebook 3D Mockup -->
+            <div class="relative w-64 h-96 mb-8">
+              <div
+                class="absolute inset-0 bg-gradient-to-br from-primary to-primary-light rounded-2xl shadow-2xl transform rotate-3 opacity-20"
+              ></div>
+              <div
+                class="absolute inset-0 bg-gradient-to-br from-primary to-primary-light rounded-2xl shadow-2xl transform -rotate-2"
+              ></div>
+
+              <div
+                class="relative bg-white rounded-2xl shadow-2xl overflow-hidden h-full border-8 border-primary/20 transform transition-transform duration-300 hover:scale-105"
+              >
+                <!-- Ebook Cover -->
+                <div
+                  class="absolute inset-0 bg-gradient-to-br from-primary to-clinical p-8 flex flex-col justify-between text-white"
+                >
+                  <div>
+                    <div class="text-6xl mb-4">📚</div>
+                    <h2 class="text-3xl font-black leading-tight">
+                      Ventilação Mecânica
+                    </h2>
+                    <p class="text-sm font-light mt-2 opacity-90">
+                      Sem Enrolação
+                    </p>
+                  </div>
+                  <div>
+                    <p class="text-sm font-semibold">Por</p>
+                    <p class="text-xl font-bold">Armando Siciliano</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Author Info Box -->
+            <div
+              class="glass-effect w-80 rounded-2xl p-6 text-center border border-white/30 backdrop-blur-md bg-white/80 shadow-xl"
+            >
+              <!-- Author Photo -->
+              <div
+                class="w-24 h-24 rounded-full bg-gradient-to-br from-primary to-clinical mx-auto mb-4 overflow-hidden shadow-lg border-4 border-white"
+              >
+                <img
+                  src="armando-siciliano.jpg"
+                  alt="Armando Siciliano"
+                  class="w-full h-full object-cover"
+                  onerror="this.style.display = 'none'"
+                />
+              </div>
+              <h3 class="text-xl font-bold text-gray-900 mb-2">
+                Armando Siciliano
+              </h3>
+              <p class="text-sm text-gray-600 mb-3">
+                Especialista em Ventilação Mecânica • Fisioterapeuta • Docente
+              </p>
+              <div class="flex justify-center gap-2">
+                <span
+                  class="px-3 py-1 bg-clinical/20 text-clinical font-semibold text-xs rounded-full"
+                  >Experiência 15+ anos</span
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SEÇÃO DE DORES -->
+    <section id="dores" class="py-20 bg-white">
+      <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-16 animate-slide-up">
+          <h2 class="text-4xl md:text-5xl font-black text-gray-900 mb-4">
+            Você enfrenta esses desafios?
+          </h2>
+          <p class="text-xl text-gray-600 max-w-2xl mx-auto">
+            Você não é o único. Esses são os problemas mais comuns que vemos
+            entre fisioterapeutas e estudantes.
+          </p>
+        </div>
+
+        <div class="grid md:grid-cols-3 gap-6">
+          <!-- Pain Point 1 -->
+          <div
+            class="group p-8 rounded-2xl bg-gradient-to-br from-red-50 to-red-100/50 border-2 border-red-200 hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1"
+          >
+            <div class="text-5xl mb-4">😵</div>
+            <h3 class="text-xl font-bold text-gray-900 mb-3">
+              Conteúdo muito complexo
+            </h3>
+            <p class="text-gray-700">
+              Materiais acadêmicos cheios de jargão que não fazem sentido na
+              prática clínica real.
+            </p>
+          </div>
+
+          <!-- Pain Point 2 -->
+          <div
+            class="group p-8 rounded-2xl bg-gradient-to-br from-orange-50 to-orange-100/50 border-2 border-orange-200 hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1"
+          >
+            <div class="text-5xl mb-4">⏰</div>
+            <h3 class="text-xl font-bold text-gray-900 mb-3">Perda de tempo</h3>
+            <p class="text-gray-700">
+              Horas estudando só para entender conceitos que poderiam ser
+              explicados em minutos.
+            </p>
+          </div>
+
+          <!-- Pain Point 3 -->
+          <div
+            class="group p-8 rounded-2xl bg-gradient-to-br from-yellow-50 to-yellow-100/50 border-2 border-yellow-200 hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1"
+          >
+            <div class="text-5xl mb-4">😰</div>
+            <h3 class="text-xl font-bold text-gray-900 mb-3">
+              Insegurança na prática
+            </h3>
+            <p class="text-gray-700">
+              Dúvidas ao ajustar parâmetros ventiladores ou interpretar dados de
+              pacientes.
+            </p>
+          </div>
+
+          <!-- Pain Point 4 -->
+          <div
+            class="group p-8 rounded-2xl bg-gradient-to-br from-blue-50 to-blue-100/50 border-2 border-blue-200 hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1"
+          >
+            <div class="text-5xl mb-4">📚</div>
+            <h3 class="text-xl font-bold text-gray-900 mb-3">
+              Excesso de teoria
+            </h3>
+            <p class="text-gray-700">
+              Informações desnecessárias que desviam do essencial para sua
+              atuação profissional.
+            </p>
+          </div>
+
+          <!-- Pain Point 5 -->
+          <div
+            class="group p-8 rounded-2xl bg-gradient-to-br from-indigo-50 to-indigo-100/50 border-2 border-indigo-200 hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1"
+          >
+            <div class="text-5xl mb-4">❓</div>
+            <h3 class="text-xl font-bold text-gray-900 mb-3">
+              Parâmetros confusos
+            </h3>
+            <p class="text-gray-700">
+              Não entender quando aumentar PEEP, ajustar FiO2 ou modificar
+              volume corrente.
+            </p>
+          </div>
+
+          <!-- Pain Point 6 -->
+          <div
+            class="group p-8 rounded-2xl bg-gradient-to-br from-purple-50 to-purple-100/50 border-2 border-purple-200 hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1"
+          >
+            <div class="text-5xl mb-4">🎓</div>
+            <h3 class="text-xl font-bold text-gray-900 mb-3">
+              Formação insuficiente
+            </h3>
+            <p class="text-gray-700">
+              Disciplinas na faculdade que não preparam adequadamente para a
+              realidade clínica.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SEÇÃO DE BENEFÍCIOS -->
+    <section
+      id="beneficios"
+      class="py-20 bg-gradient-to-br from-blue-50 via-white to-emerald-50"
+    >
+      <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-16 animate-slide-up">
+          <span
+            class="inline-block px-4 py-2 bg-clinical/10 text-clinical font-semibold text-sm rounded-full mb-4"
+          >
+            ✨ TRANSFORMAÇÃO GARANTIDA
+          </span>
+          <h2 class="text-4xl md:text-5xl font-black text-gray-900 mb-4">
+            O que você vai conseguir
+          </h2>
+          <p class="text-xl text-gray-600 max-w-2xl mx-auto">
+            Transforme sua compreensão e prática em ventilação mecânica em
+            apenas 7 dias.
+          </p>
+        </div>
+
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <!-- Benefit 1 -->
+          <div
+            class="group p-8 rounded-2xl bg-white border-2 border-gray-100 hover:border-clinical hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2"
+          >
+            <div
+              class="inline-flex items-center justify-center w-14 h-14 rounded-xl bg-clinical/10 mb-5 group-hover:bg-clinical group-hover:text-white transition-all duration-300"
+            >
+              <span class="text-2xl">🎯</span>
+            </div>
+            <h3 class="text-xl font-bold text-gray-900 mb-3">
+              Compreensão prática
+            </h3>
+            <p class="text-gray-700">
+              Entenda realmente como funcionam os modos ventilatórios e quando
+              usá-los.
+            </p>
+          </div>
+
+          <!-- Benefit 2 -->
+          <div
+            class="group p-8 rounded-2xl bg-white border-2 border-gray-100 hover:border-clinical hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2"
+          >
+            <div
+              class="inline-flex items-center justify-center w-14 h-14 rounded-xl bg-clinical/10 mb-5 group-hover:bg-clinical group-hover:text-white transition-all duration-300"
+            >
+              <span class="text-2xl">⚡</span>
+            </div>
+            <h3 class="text-xl font-bold text-gray-900 mb-3">Leitura rápida</h3>
+            <p class="text-gray-700">
+              Conteúdo organizado e objetivo. Você aprende em poucas horas, não
+              em meses.
+            </p>
+          </div>
+
+          <!-- Benefit 3 -->
+          <div
+            class="group p-8 rounded-2xl bg-white border-2 border-gray-100 hover:border-clinical hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2"
+          >
+            <div
+              class="inline-flex items-center justify-center w-14 h-14 rounded-xl bg-clinical/10 mb-5 group-hover:bg-clinical group-hover:text-white transition-all duration-300"
+            >
+              <span class="text-2xl">💪</span>
+            </div>
+            <h3 class="text-xl font-bold text-gray-900 mb-3">
+              Confiança imediata
+            </h3>
+            <p class="text-gray-700">
+              Saia seguro para trabalhar, interpretando parâmetros e ajustando
+              ventiladores.
+            </p>
+          </div>
+
+          <!-- Benefit 4 -->
+          <div
+            class="group p-8 rounded-2xl bg-white border-2 border-gray-100 hover:border-clinical hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2"
+          >
+            <div
+              class="inline-flex items-center justify-center w-14 h-14 rounded-xl bg-clinical/10 mb-5 group-hover:bg-clinical group-hover:text-white transition-all duration-300"
+            >
+              <span class="text-2xl">📱</span>
+            </div>
+            <h3 class="text-xl font-bold text-gray-900 mb-3">
+              Acesso em qualquer lugar
+            </h3>
+            <p class="text-gray-700">
+              Estude no smartphone, tablet ou computador. Sempre que tiver tempo
+              disponível.
+            </p>
+          </div>
+
+          <!-- Benefit 5 -->
+          <div
+            class="group p-8 rounded-2xl bg-white border-2 border-gray-100 hover:border-clinical hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2"
+          >
+            <div
+              class="inline-flex items-center justify-center w-14 h-14 rounded-xl bg-clinical/10 mb-5 group-hover:bg-clinical group-hover:text-white transition-all duration-300"
+            >
+              <span class="text-2xl">🔧</span>
+            </div>
+            <h3 class="text-xl font-bold text-gray-900 mb-3">
+              Aplicação prática
+            </h3>
+            <p class="text-gray-700">
+              Exemplos reais de casos clínicos que você enfrentará na sua
+              profissão.
+            </p>
+          </div>
+
+          <!-- Benefit 6 -->
+          <div
+            class="group p-8 rounded-2xl bg-white border-2 border-gray-100 hover:border-clinical hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2"
+          >
+            <div
+              class="inline-flex items-center justify-center w-14 h-14 rounded-xl bg-clinical/10 mb-5 group-hover:bg-clinical group-hover:text-white transition-all duration-300"
+            >
+              <span class="text-2xl">🚀</span>
+            </div>
+            <h3 class="text-xl font-bold text-gray-900 mb-3">
+              Crescimento profissional
+            </h3>
+            <p class="text-gray-700">
+              Eleve seu nível técnico e torne-se referência entre seus colegas.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SEÇÃO SOBRE O AUTOR -->
+    <section id="autor" class="py-20 bg-white relative overflow-hidden">
+      <div
+        class="absolute top-0 right-0 w-96 h-96 bg-primary/5 rounded-full blur-3xl"
+      ></div>
+
+      <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+        <div class="grid md:grid-cols-2 gap-12 items-center">
+          <!-- Author Image -->
+          <div class="flex justify-center items-center">
+            <div class="relative w-80 h-80 animate-float">
+              <div
+                class="absolute inset-0 bg-gradient-to-br from-primary to-clinical rounded-3xl opacity-20 blur-2xl"
+              ></div>
+              <div
+                class="relative w-full h-full rounded-3xl bg-gradient-to-br from-primary/20 to-clinical/20 border-4 border-primary/30 flex items-center justify-center backdrop-blur-sm overflow-hidden shadow-2xl"
+              >
+                <img
+                  src="armando-siciliano.jpg"
+                  alt="Armando Siciliano"
+                  class="w-full h-full object-cover"
+                  onerror="
+                    this.parentElement.innerHTML =
+                      '<div class=\'text-9xl\'>👨‍⚕️</div>'
+                  "
+                />
+              </div>
+            </div>
+          </div>
+
+          <!-- Author Content -->
+          <div class="space-y-6 animate-slide-up">
+            <div>
+              <span
+                class="px-4 py-2 bg-clinical/10 text-clinical font-semibold text-sm rounded-full"
+              >
+                🏆 ESPECIALISTA
+              </span>
+            </div>
+
+            <h2 class="text-4xl font-black text-gray-900">Armando Siciliano</h2>
+
+            <p class="text-lg text-gray-700 leading-relaxed">
+              <strong
+                >Fisioterapeuta especializado em Ventilação Mecânica</strong
+              >
+              com mais de 15 anos de experiência clínica em UTI, emergência e
+              care. Docente de cursos profissionalizantes e palestras em
+              congresso.
+            </p>
+
+            <div class="space-y-4 pt-6">
+              <div class="flex gap-4 items-start">
+                <div class="flex-shrink-0">
+                  <div
+                    class="flex items-center justify-center h-10 w-10 rounded-lg bg-clinical text-white"
+                  >
+                    ✓
+                  </div>
+                </div>
+                <div>
+                  <h3 class="font-bold text-gray-900">Experiência Clínica</h3>
+                  <p class="text-gray-600">
+                    15+ anos atuando em UTI, emergência e cuidados respiratórios
+                  </p>
+                </div>
+              </div>
+
+              <div class="flex gap-4 items-start">
+                <div class="flex-shrink-0">
+                  <div
+                    class="flex items-center justify-center h-10 w-10 rounded-lg bg-clinical text-white"
+                  >
+                    ✓
+                  </div>
+                </div>
+                <div>
+                  <h3 class="font-bold text-gray-900">Docência</h3>
+                  <p class="text-gray-600">
+                    Professor de ventilação mecânica em cursos
+                    profissionalizantes
+                  </p>
+                </div>
+              </div>
+
+              <div class="flex gap-4 items-start">
+                <div class="flex-shrink-0">
+                  <div
+                    class="flex items-center justify-center h-10 w-10 rounded-lg bg-clinical text-white"
+                  >
+                    ✓
+                  </div>
+                </div>
+                <div>
+                  <h3 class="font-bold text-gray-900">Publicações</h3>
+                  <p class="text-gray-600">
+                    Autor de conteúdo técnico em revistas especializadas
+                  </p>
+                </div>
+              </div>
+
+              <div class="flex gap-4 items-start">
+                <div class="flex-shrink-0">
+                  <div
+                    class="flex items-center justify-center h-10 w-10 rounded-lg bg-clinical text-white"
+                  >
+                    ✓
+                  </div>
+                </div>
+                <div>
+                  <h3 class="font-bold text-gray-900">Prática Real</h3>
+                  <p class="text-gray-600">
+                    Todo o conteúdo é baseado em casos reais e experiência de
+                    campo
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <p class="text-gray-700 italic pt-4 border-t border-gray-200">
+              "Criei este ebook porque vi muitos profissionais sofrendo para
+              aprender ventilação mecânica. Decidi simplificar tudo, focando
+              apenas no que realmente importa para a prática clínica."
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SEÇÃO DE CONTEÚDO -->
+    <section
+      id="modulos"
+      class="py-20 bg-gradient-to-br from-gray-50 to-blue-50"
+    >
+      <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-16 animate-slide-up">
+          <span
+            class="inline-block px-4 py-2 bg-clinical/10 text-clinical font-semibold text-sm rounded-full mb-4"
+          >
+            📚 ESTRUTURA DO EBOOK
+          </span>
+          <h2 class="text-4xl md:text-5xl font-black text-gray-900 mb-4">
+            O que você vai aprender
+          </h2>
+          <p class="text-xl text-gray-600 max-w-2xl mx-auto">
+            Conteúdo organizado e prático, do básico ao avançado, focado em sua
+            atuação clínica.
+          </p>
+        </div>
+
+        <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+          <!-- Module 1 -->
+          <div
+            class="group p-6 rounded-2xl bg-white border-2 border-gray-100 hover:border-clinical hover:shadow-xl transition-all duration-300 hover:-translate-y-1"
+          >
+            <div class="text-5xl mb-4">🫁</div>
+            <h3 class="text-lg font-bold text-gray-900 mb-2">
+              Conceitos Essenciais
+            </h3>
+            <p class="text-sm text-gray-600">
+              Respiração espontânea vs. ventilação mecânica. O que você
+              realmente precisa saber.
+            </p>
+          </div>
+
+          <!-- Module 2 -->
+          <div
+            class="group p-6 rounded-2xl bg-white border-2 border-gray-100 hover:border-clinical hover:shadow-xl transition-all duration-300 hover:-translate-y-1"
+          >
+            <div class="text-5xl mb-4">⚙️</div>
+            <h3 class="text-lg font-bold text-gray-900 mb-2">
+              Modos Ventilatórios
+            </h3>
+            <p class="text-sm text-gray-600">
+              Assistido, controlado, espontâneo. Quando usar cada um e por quê.
+            </p>
+          </div>
+
+          <!-- Module 3 -->
+          <div
+            class="group p-6 rounded-2xl bg-white border-2 border-gray-100 hover:border-clinical hover:shadow-xl transition-all duration-300 hover:-translate-y-1"
+          >
+            <div class="text-5xl mb-4">📊</div>
+            <h3 class="text-lg font-bold text-gray-900 mb-2">
+              Parâmetros Prácticos
+            </h3>
+            <p class="text-sm text-gray-600">
+              FiO2, PEEP, volume corrente. Como interpretar e ajustar
+              corretamente.
+            </p>
+          </div>
+
+          <!-- Module 4 -->
+          <div
+            class="group p-6 rounded-2xl bg-white border-2 border-gray-100 hover:border-clinical hover:shadow-xl transition-all duration-300 hover:-translate-y-1"
+          >
+            <div class="text-5xl mb-4">🔄</div>
+            <h3 class="text-lg font-bold text-gray-900 mb-2">
+              Ajustes Ventiladores
+            </h3>
+            <p class="text-sm text-gray-600">
+              Protocolo prático para modificar parâmetros com segurança.
+            </p>
+          </div>
+
+          <!-- Module 5 -->
+          <div
+            class="group p-6 rounded-2xl bg-white border-2 border-gray-100 hover:border-clinical hover:shadow-xl transition-all duration-300 hover:-translate-y-1"
+          >
+            <div class="text-5xl mb-4">🏥</div>
+            <h3 class="text-lg font-bold text-gray-900 mb-2">Manejo Clínico</h3>
+            <p class="text-sm text-gray-600">
+              Casos reais de UTI. Como proceder em diferentes situações
+              clínicas.
+            </p>
+          </div>
+
+          <!-- Module 6 -->
+          <div
+            class="group p-6 rounded-2xl bg-white border-2 border-gray-100 hover:border-clinical hover:shadow-xl transition-all duration-300 hover:-translate-y-1"
+          >
+            <div class="text-5xl mb-4">📈</div>
+            <h3 class="text-lg font-bold text-gray-900 mb-2">
+              Interpretação de Dados
+            </h3>
+            <p class="text-sm text-gray-600">
+              Gráficos e números. Entenda o que seu monitor está te dizendo.
+            </p>
+          </div>
+
+          <!-- Module 7 -->
+          <div
+            class="group p-6 rounded-2xl bg-white border-2 border-gray-100 hover:border-clinical hover:shadow-xl transition-all duration-300 hover:-translate-y-1"
+          >
+            <div class="text-5xl mb-4">⚠️</div>
+            <h3 class="text-lg font-bold text-gray-900 mb-2">
+              Complicações Comuns
+            </h3>
+            <p class="text-sm text-gray-600">
+              O que pode dar errado e como reconhecer e evitar problemas.
+            </p>
+          </div>
+
+          <!-- Module 8 -->
+          <div
+            class="group p-6 rounded-2xl bg-white border-2 border-gray-100 hover:border-clinical hover:shadow-xl transition-all duration-300 hover:-translate-y-1"
+          >
+            <div class="text-5xl mb-4">✅</div>
+            <h3 class="text-lg font-bold text-gray-900 mb-2">
+              Checklist Prático
+            </h3>
+            <p class="text-sm text-gray-600">
+              Guia rápido para consultar sempre que tiver dúvidas em plantão.
+            </p>
+          </div>
+        </div>
+
+        <!-- Bonus -->
+        <div
+          class="mt-12 p-8 rounded-2xl bg-gradient-to-r from-yellow-50 to-orange-50 border-2 border-yellow-300 text-center"
+        >
+          <h3 class="text-2xl font-bold text-gray-900 mb-4">
+            🎁 BÔNUS ESPECIAL
+          </h3>
+          <p class="text-lg text-gray-700 mb-4">
+            + Planilha prática para cálculos de ventilação mecânica (Excel)
+          </p>
+          <p class="text-lg text-gray-700">
+            + Protocolo em PDF para imprimir e levar na sua mochila (100%
+            prático)
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROVA SOCIAL -->
+    <section id="prova-social" class="py-20 bg-white">
+      <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-16 animate-slide-up">
+          <span
+            class="inline-block px-4 py-2 bg-clinical/10 text-clinical font-semibold text-sm rounded-full mb-4"
+          >
+            ⭐ O QUE AS PESSOAS DIZEM
+          </span>
+          <h2 class="text-4xl md:text-5xl font-black text-gray-900 mb-4">
+            Depoimentos de profissionais
+          </h2>
+          <p class="text-xl text-gray-600 max-w-2xl mx-auto">
+            Veja o que fisioterapeutas e estudantes estão falando sobre o ebook.
+          </p>
+        </div>
+
+        <!-- Rating Summary -->
+        <div class="text-center mb-12">
+          <div class="flex items-center justify-center gap-2 mb-4">
+            <span class="text-5xl font-black text-gray-900">4.9</span>
+            <div>
+              <div class="text-2xl flex gap-1">⭐⭐⭐⭐⭐</div>
+              <p class="text-gray-600 text-sm">Baseado em 247+ avaliações</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Testimonials -->
+        <div class="grid md:grid-cols-3 gap-6">
+          <!-- Testimonial 1 -->
+          <div
+            class="p-6 rounded-2xl bg-gradient-to-br from-blue-50 to-cyan-50 border-2 border-blue-100 hover:shadow-xl transition-all duration-300"
+          >
+            <div class="flex gap-1 mb-4">⭐⭐⭐⭐⭐</div>
+            <p class="text-gray-700 font-medium mb-4">
+              "Finalmente entendi ventilação mecânica! O ebook é objetivo,
+              prático e faz total sentido. Recomendo para todo estudante de
+              fisioterapia."
+            </p>
+            <div class="flex items-center gap-3">
+              <div
+                class="w-12 h-12 rounded-full bg-gradient-to-br from-primary to-clinical flex items-center justify-center text-white font-bold"
+              >
+                JM
+              </div>
+              <div>
+                <p class="font-bold text-gray-900">Julia Mendes</p>
+                <p class="text-sm text-gray-600">Estudante de Fisioterapia</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Testimonial 2 -->
+          <div
+            class="p-6 rounded-2xl bg-gradient-to-br from-emerald-50 to-green-50 border-2 border-emerald-100 hover:shadow-xl transition-all duration-300"
+          >
+            <div class="flex gap-1 mb-4">⭐⭐⭐⭐⭐</div>
+            <p class="text-gray-700 font-medium mb-4">
+              "Trabalho em UTI há 5 anos e ainda assim aprendi coisas novas. O
+              material é direto ao ponto, sem enrolação mesmo. Muito bom!"
+            </p>
+            <div class="flex items-center gap-3">
+              <div
+                class="w-12 h-12 rounded-full bg-gradient-to-br from-primary to-clinical flex items-center justify-center text-white font-bold"
+              >
+                CR
+              </div>
+              <div>
+                <p class="font-bold text-gray-900">Carlos Rocha</p>
+                <p class="text-sm text-gray-600">Fisioterapeuta - UTI</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Testimonial 3 -->
+          <div
+            class="p-6 rounded-2xl bg-gradient-to-br from-purple-50 to-pink-50 border-2 border-purple-100 hover:shadow-xl transition-all duration-300"
+          >
+            <div class="flex gap-1 mb-4">⭐⭐⭐⭐⭐</div>
+            <p class="text-gray-700 font-medium mb-4">
+              "Comprei para me preparar para a prova e passei na primeira!
+              Conteúdo bem organizado, exemplos práticos, excelente
+              investimento."
+            </p>
+            <div class="flex items-center gap-3">
+              <div
+                class="w-12 h-12 rounded-full bg-gradient-to-br from-primary to-clinical flex items-center justify-center text-white font-bold"
+              >
+                AF
+              </div>
+              <div>
+                <p class="font-bold text-gray-900">Ana Ferreira</p>
+                <p class="text-sm text-gray-600">Recém-formada</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SEÇÃO DE OFERTA / CHECKOUT -->
+    <section
+      id="checkout"
+      class="py-20 bg-gradient-to-br from-primary via-primary-light to-clinical relative overflow-hidden"
+    >
+      <!-- Decorative Elements -->
+      <div
+        class="absolute top-0 left-0 w-96 h-96 bg-white/5 rounded-full blur-3xl"
+      ></div>
+      <div
+        class="absolute bottom-0 right-0 w-96 h-96 bg-white/5 rounded-full blur-3xl"
+      ></div>
+
+      <div class="relative max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-12 animate-fade-in">
+          <h2 class="text-4xl md:text-5xl font-black text-white mb-4">
+            Está pronto para dominar ventilação mecânica?
+          </h2>
+          <p class="text-xl text-blue-100 max-w-2xl mx-auto">
+            Comece hoje e tenha acesso imediato ao material completo.
+          </p>
+        </div>
+
+        <!-- Pricing Card -->
+        <div
+          class="glass-effect backdrop-blur-md bg-white/10 border border-white/30 rounded-3xl p-12 text-center mb-8 hover:bg-white/15 transition-all duration-300"
+        >
+          <div class="inline-block mb-6">
+            <span
+              class="px-4 py-2 bg-yellow-400/20 text-yellow-300 font-bold text-sm rounded-full"
+            >
+              ⏰ OFERTA LIMITADA
+            </span>
+          </div>
+
+          <div class="flex items-center justify-center gap-4 mb-8">
+            <span class="text-gray-400 line-through text-3xl">R$ 99,90</span>
+            <span class="text-6xl font-black text-white">R$ 34,90</span>
+          </div>
+
+          <p class="text-blue-100 text-lg mb-8">
+            Economia de <strong class="text-yellow-300">65%</strong> • Acesso
+            vitalício • Sem taxa • Seguro
+          </p>
+
+          <!-- CTA Button -->
+          <button
+            onclick="redirectToKiwify()"
+            class="group relative w-full mb-6 px-8 py-4 bg-gradient-to-r from-yellow-400 via-yellow-300 to-orange-400 hover:shadow-2xl text-gray-900 font-black text-xl rounded-xl transition-all duration-300 transform hover:scale-105 overflow-hidden"
+          >
+            <div
+              class="absolute inset-0 bg-gradient-to-r from-yellow-500 to-orange-500 opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+            ></div>
+            <span class="relative flex items-center justify-center gap-2">
+              ✨ COMPRAR AGORA POR R$ 34,90
+            </span>
+          </button>
+
+          <p class="text-blue-100 text-sm mb-8">
+            💳 Pagamento seguro via Kiwify • Acesso instantâneo • 7 dias de
+            garantia
+          </p>
+
+          <!-- Features -->
+          <div class="border-t border-white/20 pt-8 space-y-3">
+            <div class="flex items-center justify-center gap-3 text-white">
+              <span class="text-xl">✓</span>
+              <span>Acesso imediato ao ebook em PDF</span>
+            </div>
+            <div class="flex items-center justify-center gap-3 text-white">
+              <span class="text-xl">✓</span>
+              <span>Planilha Excel para cálculos</span>
+            </div>
+            <div class="flex items-center justify-center gap-3 text-white">
+              <span class="text-xl">✓</span>
+              <span>Protocolo em PDF para imprimir</span>
+            </div>
+            <div class="flex items-center justify-center gap-3 text-white">
+              <span class="text-xl">✓</span>
+              <span>Garantia de 7 dias (reembolso 100%)</span>
+            </div>
+            <div class="flex items-center justify-center gap-3 text-white">
+              <span class="text-xl">✓</span>
+              <span>Atualizações futuras incluídas</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Guarantee -->
+        <div
+          class="glass-effect backdrop-blur-md bg-white/5 border border-white/30 rounded-2xl p-8 text-center"
+        >
+          <h3 class="text-white font-bold text-lg mb-3">
+            🛡️ GARANTIA INCONDICIONAL DE 7 DIAS
+          </h3>
+          <p class="text-blue-100">
+            Não gostou do material? Devolva sem perguntas em até 7 dias e receba
+            seu dinheiro de volta. Sem riscos!
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section id="faq" class="py-20 bg-white">
+      <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-16 animate-slide-up">
+          <h2 class="text-4xl md:text-5xl font-black text-gray-900 mb-4">
+            Perguntas frequentes
+          </h2>
+        </div>
+
+        <div class="space-y-4">
+          <!-- FAQ Item 1 -->
+          <details
+            class="group p-6 rounded-xl bg-gray-50 border-2 border-gray-100 hover:border-clinical cursor-pointer transition-all duration-300"
+          >
+            <summary
+              class="flex justify-between items-center font-bold text-lg text-gray-900 select-none"
+            >
+              <span>Serve para iniciantes ou só para experientes?</span>
+              <span
+                class="text-2xl group-open:rotate-180 transition-transform duration-300"
+                >▼</span
+              >
+            </summary>
+            <p class="mt-4 text-gray-700 leading-relaxed">
+              Perfeito para ambos! O material começa do básico (o que é
+              ventilação mecânica) e vai até conceitos mais avançados. Cada um
+              aprende no seu ritmo.
+            </p>
+          </details>
+
+          <!-- FAQ Item 2 -->
+          <details
+            class="group p-6 rounded-xl bg-gray-50 border-2 border-gray-100 hover:border-clinical cursor-pointer transition-all duration-300"
+          >
+            <summary
+              class="flex justify-between items-center font-bold text-lg text-gray-900 select-none"
+            >
+              <span>Tenho acesso imediato?</span>
+              <span
+                class="text-2xl group-open:rotate-180 transition-transform duration-300"
+                >▼</span
+              >
+            </summary>
+            <p class="mt-4 text-gray-700 leading-relaxed">
+              Sim! Após a confirmação do pagamento, você recebe um email com o
+              link de download. Leva menos de 1 minuto.
+            </p>
+          </details>
+
+          <!-- FAQ Item 3 -->
+          <details
+            class="group p-6 rounded-xl bg-gray-50 border-2 border-gray-100 hover:border-clinical cursor-pointer transition-all duration-300"
+          >
+            <summary
+              class="flex justify-between items-center font-bold text-lg text-gray-900 select-none"
+            >
+              <span>Funciona no celular?</span>
+              <span
+                class="text-2xl group-open:rotate-180 transition-transform duration-300"
+                >▼</span
+              >
+            </summary>
+            <p class="mt-4 text-gray-700 leading-relaxed">
+              Totalmente! O PDF funciona perfeitamente em qualquer smartphone,
+              tablet ou computador. Estude onde quiser.
+            </p>
+          </details>
+
+          <!-- FAQ Item 4 -->
+          <details
+            class="group p-6 rounded-xl bg-gray-50 border-2 border-gray-100 hover:border-clinical cursor-pointer transition-all duration-300"
+          >
+            <summary
+              class="flex justify-between items-center font-bold text-lg text-gray-900 select-none"
+            >
+              <span>O ebook tem certificado?</span>
+              <span
+                class="text-2xl group-open:rotate-180 transition-transform duration-300"
+                >▼</span
+              >
+            </summary>
+            <p class="mt-4 text-gray-700 leading-relaxed">
+              O ebook é um material educativo. Não é um curso certificado, mas
+              você ganha um comprovante de compra que pode incluir no seu
+              currículo.
+            </p>
+          </details>
+
+          <!-- FAQ Item 5 -->
+          <details
+            class="group p-6 rounded-xl bg-gray-50 border-2 border-gray-100 hover:border-clinical cursor-pointer transition-all duration-300"
+          >
+            <summary
+              class="flex justify-between items-center font-bold text-lg text-gray-900 select-none"
+            >
+              <span>Quanto tempo leva para aprender?</span>
+              <span
+                class="text-2xl group-open:rotate-180 transition-transform duration-300"
+                >▼</span
+              >
+            </summary>
+            <p class="mt-4 text-gray-700 leading-relaxed">
+              A leitura completa leva de 3-5 horas. Mas o conteúdo é feito para
+              reler sempre que precisar durante sua prática clínica.
+            </p>
+          </details>
+
+          <!-- FAQ Item 6 -->
+          <details
+            class="group p-6 rounded-xl bg-gray-50 border-2 border-gray-100 hover:border-clinical cursor-pointer transition-all duration-300"
+          >
+            <summary
+              class="flex justify-between items-center font-bold text-lg text-gray-900 select-none"
+            >
+              <span>E se não gostar? Como funciona o reembolso?</span>
+              <span
+                class="text-2xl group-open:rotate-180 transition-transform duration-300"
+                >▼</span
+              >
+            </summary>
+            <p class="mt-4 text-gray-700 leading-relaxed">
+              Muito simples! Se não ficar satisfeito, basta enviar um email nos
+              primeiros 7 dias e devolvemos 100% do seu dinheiro. Sem perguntas,
+              sem enrolação.
+            </p>
+          </details>
+
+          <!-- FAQ Item 7 -->
+          <details
+            class="group p-6 rounded-xl bg-gray-50 border-2 border-gray-100 hover:border-clinical cursor-pointer transition-all duration-300"
+          >
+            <summary
+              class="flex justify-between items-center font-bold text-lg text-gray-900 select-none"
+            >
+              <span>Como é o pagamento?</span>
+              <span
+                class="text-2xl group-open:rotate-180 transition-transform duration-300"
+                >▼</span
+              >
+            </summary>
+            <p class="mt-4 text-gray-700 leading-relaxed">
+              Pagamento seguro via cartão de crédito, débito ou transferência
+              bancária. Processado por Kiwify, a plataforma mais segura do
+              Brasil.
+            </p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA FINAL -->
+    <section
+      class="py-20 bg-gradient-to-br from-primary to-primary-dark text-white relative overflow-hidden"
+    >
+      <!-- Decorative -->
+      <div
+        class="absolute top-0 right-0 w-96 h-96 bg-clinical/10 rounded-full blur-3xl"
+      ></div>
+
+      <div class="relative max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+        <h2 class="text-5xl md:text-6xl font-black mb-6 leading-tight">
+          Não fique para trás
+        </h2>
+
+        <p class="text-xl text-blue-100 mb-8 max-w-2xl mx-auto">
+          Seus colegas já estão aprendendo ventilação mecânica de forma prática.
+          Você vai ficar esperando quando?
+        </p>
+
+        <div class="flex flex-col sm:flex-row gap-4 justify-center">
+          <button
+            onclick="scrollToCheckout()"
+            class="group relative px-8 py-4 bg-gradient-to-r from-yellow-400 to-orange-400 hover:shadow-2xl text-gray-900 font-black text-lg rounded-xl transition-all duration-300 transform hover:scale-105 overflow-hidden"
+          >
+            <div
+              class="absolute inset-0 bg-gradient-to-r from-yellow-500 to-orange-500 opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+            ></div>
+            <span class="relative flex items-center justify-center gap-2">
+              💚 COMPRAR AGORA - R$ 34,90
+            </span>
+          </button>
+          <button
+            onclick="scrollToCheckout()"
+            class="px-8 py-4 bg-white/20 hover:bg-white/30 text-white font-bold text-lg rounded-xl border-2 border-white/50 transition-all duration-300"
+          >
+            Ver detalhes
+          </button>
+        </div>
+
+        <p class="text-blue-200 text-sm mt-6">
+          ✓ Garantia de 7 dias • ✓ Acesso vitalício • ✓ Sem taxas
+        </p>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="bg-gray-900 text-gray-400 py-12">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid md:grid-cols-4 gap-8 mb-8">
+          <div>
+            <div class="flex items-center space-x-2 mb-4">
+              <div
+                class="w-8 h-8 bg-gradient-to-br from-primary to-clinical rounded-lg flex items-center justify-center"
+              >
+                <span class="text-white font-bold text-sm">VM</span>
+              </div>
+              <span class="text-white font-bold">Ventilação Mecânica</span>
+            </div>
+            <p class="text-sm">
+              Aprenda ventilação mecânica de forma simples e prática.
+            </p>
+          </div>
+
+          <div>
+            <h4 class="text-white font-bold mb-4">Produto</h4>
+            <ul class="space-y-2 text-sm">
+              <li>
+                <a href="#modulos" class="hover:text-white transition"
+                  >Conteúdo</a
+                >
+              </li>
+              <li>
+                <a href="#autor" class="hover:text-white transition"
+                  >Sobre o Autor</a
+                >
+              </li>
+              <li>
+                <a href="#checkout" class="hover:text-white transition"
+                  >Comprar</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <div>
+            <h4 class="text-white font-bold mb-4">Suporte</h4>
+            <ul class="space-y-2 text-sm">
+              <li>
+                <a href="#faq" class="hover:text-white transition"
+                  >Perguntas Frequentes</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <div>
+            <h4 class="text-white font-bold mb-4">Redes Sociais</h4>
+            <ul class="space-y-2 text-sm">
+              <li>
+                <a href="#" class="hover:text-white transition">Instagram</a>
+              </li>
+              <li>
+                <a href="#" class="hover:text-white transition">LinkedIn</a>
+              </li>
+              <li>
+                <a href="#" class="hover:text-white transition">WhatsApp</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="border-t border-gray-800 pt-8 text-center text-sm">
+          <p>
+            &copy; 2026 Ventilação Mecânica Sem Enrolação. Todos os direitos
+            reservados.
+          </p>
+          <p class="mt-2">Desenvolvido com ❤️ para profissionais de saúde</p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,502 @@
+/* ========================================
+   ESTILOS CUSTOMIZADOS - LANDING PAGE
+   Ventilação Mecânica Sem Enrolação
+   ======================================== */
+
+:root {
+  --primary: #0a5c7e;
+  --primary-dark: #053a5f;
+  --primary-light: #0d7fa3;
+  --clinical: #10b981;
+  --clinical-light: #6ee7b7;
+  --accent: #06b6d4;
+}
+
+/* ========================================
+   GLASSMORPHISM EFFECT
+   ======================================== */
+.glass-effect {
+  backdrop-filter: blur(16px) brightness(1.1);
+  -webkit-backdrop-filter: blur(16px) brightness(1.1);
+}
+
+/* ========================================
+   SMOOTH SCROLLING
+   ======================================== */
+html {
+  scroll-behavior: smooth;
+}
+
+/* ========================================
+   ANIMATIONS
+   ======================================== */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes float {
+  0%,
+  100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+@keyframes glow {
+  0%,
+  100% {
+    box-shadow: 0 0 20px rgba(13, 127, 163, 0.3);
+  }
+  50% {
+    box-shadow: 0 0 40px rgba(13, 127, 163, 0.6);
+  }
+}
+
+@keyframes slideInFromBottom {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ========================================
+   SCROLL REVEAL ANIMATIONS
+   ======================================== */
+.scroll-reveal {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all 0.8s ease-out;
+}
+
+.scroll-reveal.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* ========================================
+   HOVER EFFECTS
+   ======================================== */
+button {
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+button:active {
+  transform: scale(0.98);
+}
+
+a {
+  transition: color 0.3s ease;
+}
+
+/* ========================================
+   RESPONSIVE HERO
+   ======================================== */
+@media (max-width: 768px) {
+  .animate-float {
+    animation: none;
+  }
+
+  h1 {
+    font-size: 2.25rem !important;
+  }
+
+  h2 {
+    font-size: 1.875rem !important;
+  }
+}
+
+/* ========================================
+   FLOATING CTA BUTTON
+   ======================================== */
+#floating-cta {
+  animation: slideInFromRight 0.5s cubic-bezier(0.34, 1.56, 0.64, 1);
+  box-shadow: 0 8px 32px rgba(16, 185, 129, 0.4);
+  transition: all 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+#floating-cta:hover {
+  transform: scale(1.15);
+  box-shadow: 0 12px 48px rgba(16, 185, 129, 0.6);
+}
+
+#floating-cta span:last-child {
+  animation: bounce 2s infinite;
+}
+
+@keyframes slideInFromRight {
+  from {
+    opacity: 0;
+    transform: translateX(100px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* ========================================
+   STICKY ELEMENTS
+   ======================================== */
+#sticky-cta {
+  z-index: 40;
+  animation: slideInFromBottom 0.4s ease-out;
+}
+
+#sticky-cta.visible {
+  transform: translateY(0);
+}
+
+/* ========================================
+   HEADER STYLES
+   ======================================== */
+header {
+  transition: all 0.3s ease;
+}
+
+header.scrolled {
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  background-color: rgba(255, 255, 255, 0.98);
+}
+
+/* ========================================
+   GRADIENT TEXT
+   ======================================== */
+.text-gradient {
+  background: linear-gradient(135deg, var(--primary), var(--clinical));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* ========================================
+   CARD HOVER EFFECTS
+   ======================================== */
+.card-hover {
+  transition: all 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+.card-hover:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+}
+
+/* ========================================
+   BUTTON STYLES
+   ======================================== */
+.btn-primary {
+  background: linear-gradient(135deg, var(--clinical), #10d981);
+  color: white;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.btn-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 25px rgba(16, 185, 129, 0.3);
+}
+
+.btn-primary:active {
+  transform: translateY(0);
+}
+
+/* ========================================
+   SECTION SPACING
+   ======================================== */
+section {
+  position: relative;
+  overflow: hidden;
+}
+
+/* ========================================
+   TESTIMONIAL CARDS
+   ======================================== */
+.testimonial-card {
+  transition: all 0.3s ease;
+  border: 2px solid transparent;
+}
+
+.testimonial-card:hover {
+  border-color: var(--clinical);
+  box-shadow: 0 20px 40px rgba(16, 185, 129, 0.15);
+}
+
+/* ========================================
+   PRICING CARD
+   ======================================== */
+.pricing-card {
+  position: relative;
+  border: 2px solid transparent;
+  transition: all 0.3s ease;
+}
+
+.pricing-card:hover {
+  border-color: var(--clinical);
+  transform: scale(1.02);
+}
+
+/* ========================================
+   DETAILS / ACCORDION
+   ======================================== */
+details {
+  cursor: pointer;
+}
+
+details summary {
+  list-style: none;
+}
+
+details summary::-webkit-details-marker {
+  display: none;
+}
+
+details[open] {
+  background-color: rgba(16, 185, 129, 0.05);
+  border-color: var(--clinical);
+}
+
+details[open] summary {
+  color: var(--clinical);
+}
+
+/* ========================================
+   LOADER & ANIMATIONS
+   ======================================== */
+.pulse {
+  animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+@keyframes pulse {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+}
+
+/* ========================================
+   BADGE STYLES
+   ======================================== */
+.badge {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  border-radius: 9999px;
+  font-size: 0.875rem;
+  font-weight: 600;
+  background: rgba(16, 185, 129, 0.1);
+  color: var(--clinical);
+  transition: all 0.3s ease;
+}
+
+.badge:hover {
+  background: rgba(16, 185, 129, 0.2);
+  transform: translateY(-2px);
+}
+
+/* ========================================
+   ACCESSIBILITY
+   ======================================== */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+/* ========================================
+   PRINT STYLES
+   ======================================== */
+@media print {
+  header,
+  #sticky-cta,
+  .no-print {
+    display: none !important;
+  }
+}
+
+/* ========================================
+   DARK MODE SUPPORT
+   ======================================== */
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: #0f172a;
+    color: #e2e8f0;
+  }
+
+  section {
+    background-color: #1e293b;
+  }
+
+  .bg-white {
+    background-color: #1e293b;
+  }
+
+  .text-gray-900 {
+    color: #e2e8f0;
+  }
+
+  .text-gray-700 {
+    color: #cbd5e1;
+  }
+
+  .text-gray-600 {
+    color: #94a3b8;
+  }
+
+  .bg-gray-50 {
+    background-color: #0f172a;
+  }
+
+  .bg-gray-100 {
+    background-color: #1e293b;
+  }
+
+  .border-gray-100 {
+    border-color: #334155;
+  }
+
+  .border-gray-200 {
+    border-color: #334155;
+  }
+
+  header {
+    background-color: rgba(15, 23, 42, 0.95);
+  }
+}
+
+/* ========================================
+   RESPONSIVE TYPOGRAPHY
+   ======================================== */
+@media (max-width: 640px) {
+  h1 {
+    font-size: 2rem;
+    line-height: 2.5rem;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+
+  h3 {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+  }
+
+  p {
+    font-size: 0.95rem;
+    line-height: 1.5rem;
+  }
+}
+
+/* ========================================
+   FORM STYLES
+   ======================================== */
+input,
+textarea,
+select {
+  transition: all 0.3s ease;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(16, 185, 129, 0.1);
+  border-color: var(--clinical);
+}
+
+/* ========================================
+   UTILITY CLASSES
+   ======================================== */
+.shadow-glow {
+  box-shadow: 0 0 30px rgba(16, 185, 129, 0.2);
+}
+
+.bg-header {
+  background-size: cover;
+  background-image: url(cti-background.jpg);
+  background-position: center;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  opacity: 0.35;
+}
+
+.shadow-glow-lg {
+  box-shadow: 0 0 50px rgba(16, 185, 129, 0.3);
+}
+
+.gradient-primary {
+  background: linear-gradient(135deg, var(--primary), var(--primary-light));
+}
+
+.gradient-clinical {
+  background: linear-gradient(135deg, var(--clinical), #10d981);
+}
+
+.gradient-accent {
+  background: linear-gradient(135deg, var(--accent), var(--clinical));
+}
+
+/* ========================================
+   Z-INDEX MANAGEMENT
+   ======================================== */
+header {
+  z-index: 50;
+}
+
+#sticky-cta {
+  z-index: 40;
+}
+
+nav {
+  z-index: 30;
+}
+
+/* ========================================
+   PERFORMANCE OPTIMIZATIONS
+   ======================================== */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+section {
+  will-change: auto;
+}
+
+section:in-view {
+  will-change: transform;
+}
+
+footer {
+  position: relative;
+}
