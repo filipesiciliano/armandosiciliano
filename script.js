@@ -135,11 +135,11 @@ function handlePurchase() {
 // FUNÇÃO DEDICADA PARA KIWIFY
 // ========================================
 function redirectToKiwify() {
-  trackEvent("kiwify_click", {
+  trackEvent("hotmart_click", {
     product: "Ventilação Mecânica Sem Enrolação",
     price: 34.9,
   });
-  window.location.href = "https://pay.kiwify.com.br/BoEyQDB";
+  window.location.href = "https://pay.hotmart.com/V105782558J";
 }
 
 // ========================================
