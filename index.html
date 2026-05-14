@@ -166,7 +166,7 @@
     <!-- Floating CTA Button (Right Side) -->
     <button
       id="floating-cta"
-      onclick="redirectToKiwify()"
+      onclick="scrollToCheckout()"
       class="hidden fixed right-6 bottom-8 z-40 group bg-gradient-to-r from-clinical to-emerald-500 hover:shadow-2xl text-white font-bold py-4 px-6 rounded-full transition-all duration-300 transform hover:scale-110 shadow-lg animate-pulse hover:animate-none"
     >
       <span class="flex items-center justify-center gap-2">
@@ -955,7 +955,7 @@
     <!-- SEÇÃO DE OFERTA / CHECKOUT -->
     <section
       id="checkout"
-      class="py-20 bg-gradient-to-br from-primary via-primary-light to-clinical relative overflow-hidden"
+      class="py-10 bg-gradient-to-br from-primary via-primary-light to-clinical relative overflow-hidden"
     >
       <!-- Decorative Elements -->
       <div
@@ -988,8 +988,8 @@
           </div>
 
           <div class="flex items-center justify-center gap-4 mb-8">
-            <span class="text-gray-400 line-through text-3xl">R$ 99,90</span>
-            <span class="text-6xl font-black text-white">R$ 34,90</span>
+            <span class="text-gray-400 line-through text-xl">R$ 99,90</span>
+            <span class="text-3xl font-black text-white">R$ 34,90</span>
           </div>
 
           <p class="text-blue-100 text-lg mb-8">
@@ -1005,8 +1005,15 @@
             <div
               class="absolute inset-0 bg-gradient-to-r from-yellow-500 to-orange-500 opacity-0 group-hover:opacity-100 transition-opacity duration-300"
             ></div>
-            <span class="relative flex items-center justify-center gap-2">
-              ✨ COMPRAR AGORA POR R$ 34,90
+            <span
+              class="hidden md:block lg:block relative flex items-center justify-center gap-2"
+            >
+              COMPRAR AGORA POR R$ 34,90
+            </span>
+            <span
+              class="text-sm md:hidden lg:hidden relative flex items-center justify-center gap-1"
+            >
+              COMPRAR AGORA POR R$ 34,90
             </span>
           </button>
 
